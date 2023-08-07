@@ -14,8 +14,10 @@ The main goals is to learn:
 Learning highlights:
 
 <b>1. Using WORK ITEMS</b>
+
 A work item contains a payload of JSON-based data and optionally attached files.
 There are 2 approach with work items:<br/>
 (1) - default & more powerful - each step of the process creates output items, with the option of creating multiple items at once.<br/>
 (2) one work item for each process run is passed between steps and optionally modified at each stage. <br/>
 
+- By default, the RPA.Robocorp.WorkItems library uses Control Room to store the work items and pass them between steps.<br/>
