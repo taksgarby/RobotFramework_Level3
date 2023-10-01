@@ -29,3 +29,12 @@ The producer robot<br/>
 - downloads the raw traffic data.
 - transforms the raw data into a business data format.
 - saves the business data as work items that can be consumed later.
+
+The consumer robot<br/>
+
+- loops all the work items one by one.
+- validates teh data.
+- posts the data to the sales system API.
+- handles successful responses.
+- handles application exceptioins.
+- handles business exceptions.

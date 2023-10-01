@@ -8,11 +8,14 @@ Resource            shared.robot
 *** Tasks ***
 Consume traffic data work items
     For Each Input Work Item    Process traffic data
+# convenient way for looping all the available work items
+# it takes a keywordas an argument
 
 
 *** Keywords ***
 Process traffic data
     ${payload}=    Get Work Item Payload
+    # gets the payload from the currently loaded work item
     ${traffic_data}=    Set Variable    ${payload}[${WORK_ITEM_NAME}]
     ${valid}=    Validate traffic data    ${traffic_data}
     IF    ${valid}

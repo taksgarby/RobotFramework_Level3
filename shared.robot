@@ -4,6 +4,7 @@ Documentation       Inhuman Insurance, Inc. Artificial Intelligence System robot
 
 Library             RPA.JSON
 Library             RPA.Robocorp.WorkItems
+Library             RPA.HTTP
 
 
 *** Variables ***

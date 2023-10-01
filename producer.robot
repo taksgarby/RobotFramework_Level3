@@ -3,7 +3,6 @@ Documentation       Inhuman Insurance, Inc. Artificial Intelligence System robot
 ...                 Produces traffic data work items.
 
 Library             Collections
-Library             RPA.HTTP
 Library             RPA.JSON
 Library             RPA.Tables
 Resource            shared.robot
@@ -23,10 +22,10 @@ Produce traffic data work items
     Download traffic data
     ${traffic_data}=    Load traffic data as table
     Write Table To Csv    ${traffic_data}    test.csv
-    # ${filtered_data}=    Filter and sort traffic data    ${traffic_data}
-    # ${filtered_data}=    Get latest data by country    ${filtered_data}
-    # ${payloads}=    Create work item payloads    ${filtered_data}
-    # Save work item payloads    ${payloads}
+    ${filtered_data}=    Filter and sort traffic data    ${traffic_data}
+    ${filtered_data}=    Get latest data by country    ${filtered_data}
+    ${payloads}=    Create work item payloads    ${filtered_data}
+    Save work item payloads    ${payloads}
 
 
 *** Keywords ***
@@ -78,6 +77,9 @@ Save work item payloads
     FOR    ${payload}    IN    @{payloads}
         Save work item payload    ${payload}
     END
+
+# custom keyword that takes the list of payloads as an argument and calls another custom keyword
+# (save work item payload) to save each payload as a work item
 
 Save work item payload
     [Arguments]    ${payload}
