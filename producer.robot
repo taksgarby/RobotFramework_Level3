@@ -22,10 +22,11 @@ ${YEAR_KEY}=                    TimeDim
 Produce traffic data work items
     Download traffic data
     ${traffic_data}=    Load traffic data as table
-    ${filtered_data}=    Filter and sort traffic data    ${traffic_data}
-    ${filtered_data}=    Get latest data by country    ${filtered_data}
-    ${payloads}=    Create work item payloads    ${filtered_data}
-    Save work item payloads    ${payloads}
+    Write Table To Csv    ${traffic_data}    test.csv
+    # ${filtered_data}=    Filter and sort traffic data    ${traffic_data}
+    # ${filtered_data}=    Get latest data by country    ${filtered_data}
+    # ${payloads}=    Create work item payloads    ${filtered_data}
+    # Save work item payloads    ${payloads}
 
 
 *** Keywords ***

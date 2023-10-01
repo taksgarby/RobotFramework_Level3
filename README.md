@@ -21,3 +21,17 @@ There are 2 approach with work items:<br/>
 (2) one work item for each process run is passed between steps and optionally modified at each stage. <br/>
 
 - By default, the RPA.Robocorp.WorkItems library uses Control Room to store the work items and pass them between steps.<br/>
+
+<b>2. Producer - Consumer model </b>
+┌──────────────┐
+│ shared.robot │
+└──────────────┘
+↓ ↓
+┌────────────────┐ ┌────────────────┐
+│ producer.robot │ │ consumer.robot │
+└────────────────┘ └────────────────┘
+The producer robot<br/>
+
+- downloads the raw traffic data.
+- transforms the raw data into a business data format.
+- saves the business data as work items that can be consumed later.
