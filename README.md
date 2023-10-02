@@ -34,7 +34,7 @@ The producer robot
 The consumer robot
 
 - loops all the work items one by one.
-- validates teh data.
+- validates the data.
 - posts the data to the sales system API.
 - handles successful responses.
 - handles application exceptioins.
