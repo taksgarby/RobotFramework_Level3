@@ -14,7 +14,7 @@ The main goals is to learn:
 
 Learning highlights:
 
-<b>!1. Using WORK ITEMS</b>
+<b>+ 1. Using WORK ITEMS</b>
 
 A work item contains a payload of JSON-based data and optionally attached files.
 There are 2 approach with work items:<br/>
@@ -23,7 +23,7 @@ There are 2 approach with work items:<br/>
 
 - By default, the RPA.Robocorp.WorkItems library uses Control Room to store the work items and pass them between steps.<br/>
 
-<b>!2. Producer - Consumer model </b>
+<b>+ 2. Producer - Consumer model </b>
 
 The producer robot<br/>
 
@@ -41,4 +41,4 @@ The consumer robot<br/>
 - handles business exceptions.
 
 I have completed the exam and obtained Level III Automation Developer certificate.
-```diff
+```
