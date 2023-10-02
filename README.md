@@ -17,21 +17,21 @@ Learning highlights:
 + 1. Using WORK ITEMS
 
 A work item contains a payload of JSON-based data and optionally attached files.
-There are 2 approach with work items:<br/>
-(1) - default & more powerful - each step of the process creates output items, with the option of creating multiple items at once.<br/>
-(2) one work item for each process run is passed between steps and optionally modified at each stage. <br/>
+There are 2 approach with work items:
+(1) - default & more powerful - each step of the process creates output items, with the option of creating multiple items at once.
+(2) one work item for each process run is passed between steps and optionally modified at each stage. 
 
-- By default, the RPA.Robocorp.WorkItems library uses Control Room to store the work items and pass them between steps.<br/>
+- By default, the RPA.Robocorp.WorkItems library uses Control Room to store the work items and pass them between steps.
 
 + 2. Producer - Consumer model
 
-The producer robot<br/>
+The producer robot
 
 - downloads the raw traffic data.
 - transforms the raw data into a business data format.
 - saves the business data as work items that can be consumed later.
 
-The consumer robot<br/>
+The consumer robot
 
 - loops all the work items one by one.
 - validates teh data.
