@@ -1,3 +1,4 @@
+```diff
 # RPA Certification Level 3
 
 The main goals is to learn:
@@ -40,3 +41,4 @@ The consumer robot<br/>
 - handles business exceptions.
 
 I have completed the exam and obtained Level III Automation Developer certificate.
+```diff
