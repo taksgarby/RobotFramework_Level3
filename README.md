@@ -38,3 +38,5 @@ The consumer robot<br/>
 - handles successful responses.
 - handles application exceptioins.
 - handles business exceptions.
+
+I have completed the exam and obtained Level III Automation Developer certificate.
